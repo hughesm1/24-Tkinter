@@ -3,8 +3,8 @@ This project lets you try out Tkinter/Ttk and practice it!
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Marcus Hughes-Oliver.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import tkinter
 from tkinter import ttk
@@ -78,6 +78,20 @@ def main():
     e_button = ttk.Button(main_frame, text="Exit")
     e_button.grid()
     e_button['command'] = lambda: exit()
+
+    left_speed_label.grid(row=0, column=0)
+    right_speed_label.grid(row=0, column=2)
+    left_speed_entry.grid(row=1, column=0)
+    right_speed_entry.grid(row=1, column=2)
+    forward_button.grid(row=2, column=1)
+    left_button.grid(row=3, column=0)
+    stop_button.grid(row=3, column=1)
+    right_button.grid(row=3, column=2)
+    back_button.grid(row=4, column=1)
+    up_button.grid(row=5, column=0)
+    q_button.grid(row=5, column=2)
+    down_button.grid(row=6, column=0)
+    e_button.grid(row=6, column=2)
 
     root.mainloop()
 
